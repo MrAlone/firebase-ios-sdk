@@ -68,6 +68,8 @@ NSString *const kAppDistroLibraryName = @"fire-fad";
     NSLog(@"Error retrieving token from keychain: %@", [authRetrievalError localizedDescription]);
   }
   self.isTesterSignedIn = self.authState ? YES : NO;
+
+  NSLog(@"Tester %@ already logged in", self.isTesterSignedIn ? @"is" : @"is not");
   return self;
 }
 
