@@ -37,11 +37,8 @@ iOS SDK for App Distribution for Firebase.
 
   s.test_spec 'unit' do |unit_tests|
    unit_tests.source_files = 'FirebaseAppDistribution/Tests/Unit*/*.[mh]'
+   unit_tests.dependency 'OCMock'
   end
-
-  # app_host is needed for tests with keychain
-  unit_tests.requires_app_host = true
-  unit_tests.dependency 'OCMock'
 
   # end
 end

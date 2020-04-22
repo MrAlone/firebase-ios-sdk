@@ -37,9 +37,6 @@ typedef NS_ENUM(NSUInteger, FIRAppDistributionKeychainError) {
 
 @interface FIRAppDistributionAuthPersistence : NSObject
 
-// A Keychain persistence implementation
-@property (class, nonatomic, readonly) Class<FIRAppDistributionKeychainProtocol> keychainUtility;
-
 - (instancetype)init NS_UNAVAILABLE;
 
 // Handle null checking, creation, and formatting of an error encountered
